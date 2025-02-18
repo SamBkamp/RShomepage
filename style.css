@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body{
+    font-family: "Lexend Deca", serif;
+}
+
+#mainBanner{
+    width: 70vw;
+    height: 30vw;
+    background-image: url("./media/banner1.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
