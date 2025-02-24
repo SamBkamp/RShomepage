@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body{
+    font-family: "Lexend Deca", serif;
+}
+
+#mainBanner{
+    width: 70%;
+    height: 26vw;
+    background-image: url("/media/banner1.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.subBanner{ /* for the secondary banner under the main banner*/
+    height: 17vw;
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.subBanner:hover{
+    box-shadow: 0px 0px 20px 2px #212121 inset;
+}
+
+#subBanner1{
+    background-image: url("/media/subbanner1.png");
+}
+
+#subBanner2{
+    background-position: left top !important; 
+    background-image: url("/media/subbanner2.png");
+}
+
+.citem{
+    height: 100%;
+    width: 100%;
+}
+
+#carousel{
+    width: 70%;
+    /*height: 17vw;*/
+    overflow-y: hidden;
+    margin: 0 auto;
+}
+
+#footer{
+    height: 5vh;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators to white */ {
+    filter: invert(100%);
+}

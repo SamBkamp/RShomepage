@@ -1,0 +1,7 @@
+const path = require("path");
+
+var root = async (req, res) => {
+    res.render("root");
+};
+
+exports.root = root;
