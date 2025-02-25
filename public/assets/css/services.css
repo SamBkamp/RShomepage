@@ -1,0 +1,77 @@
+.row{
+    width: 100%;
+    height: 60vh;
+    margin: 4rem 0;
+}
+
+.column{
+    height: 100%;
+    display: inline-block;
+    padding: 4%;
+}
+
+.light{
+    color: #ffffff;
+}
+
+li{
+    font-size: 80%;
+    color: #ffffff;
+}
+
+.imgFormat{
+    background-image: url("../../images/plumbing.png");
+    background-size: cover !important;
+    overflow: none;
+    width: 100%;
+}
+
+.nText{
+    text-align: left;
+    font-size: 90%;
+}
+
+.banner{
+    width: 70%;
+    height: 100%;
+    background-color: #000a2d;
+    padding: 4%;
+    vertical-align: top; 
+}
+
+.smallCol{
+    height: 100%;
+    width: 45%;
+    display: inline-block;
+
+}
+
+
+#elongate{
+    height: 52vh;
+    width: 40%;
+    display: inline-block;
+    margin: 0;
+}
+
+#pictures{
+    width: 60%;
+    height: 52vh;
+    display: inline-block;
+    background-image: url("../../images/scrub.jpg");
+    background-position: center bottom;
+}
+#installPic{
+    background-image: url("../../images/install.png");
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 100%;
+    vertical-align: top;
+}
+#install-flex{
+    display: flex;
+    margin-bottom: 4rem;
+    height: 33vh;
+    align-items: center;
+}

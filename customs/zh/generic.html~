@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Reef Studio Custom Aquariums</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/services.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Reef Studio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="generic.html">我們的服務</a></li>
+							<li><a href="tanks.html">水族箱類型</a></li>
+						</ul>
+						<a href="../" style="height: 100%; display: flex; align-items: center;"><img src="../images/english.png" id="langChange"></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>我們的服務</h1>
+								</header>
+								<div class="image main"><img src="images/Reef.jpg" alt="" /></div>
+								<h2>水族箱設計</h2>
+
+								<div class="row">
+								  <div class="column" style="width: 40%;padding-top: 0px; text-align: left;">
+								    <p style="text-align: left; font-size: 95%;">每個水族箱都應該反映其主人的獨特品味和偏好。我們的設計過程從瞭解您的願景、空間和生活方式開始，使我們能夠定製一個完全適合您的水族箱。從選擇合適的魚類和植物到設計功能性布局，量身定製以滿足您的需求。</p>
+								  </div>
+								  <div class="column" style="background-color: #000a2d; width: 30%;">
+								    <h4 class="light">設計過程包括（2-3 周）</h4>
+								    <ul class="light">
+								      <li>決定水族箱的大小/尺寸</li>
+								      <li>選擇水族箱的主題/類型</li>
+								      <li>選擇合適的過濾和照明設備</li>
+								      <li>繪製施工圖</li>
+								    </ul>
+								  </div>
+								  <div class="column imgFormat" style="width: 30%">
+								    
+								  </div>
+								</div>
+								
+								<h2 style="text-align: right;">水族箱安裝</h2>
+								
+								
+								
+								<p class="nText">我們的團隊是擁有豐富水族箱安裝經驗的熟練專業人士組成。我們對各種水生生態系統的了解，確保您的水族箱不僅在視覺上具有吸引力，而且對其棲息生物來說也是健康的和可持續的。</p>
+								<div id="install-flex">
+								<div class="banner">
+								  <h4 style="color: white;">安裝過程包括（8-12 周）</h4>
+								  <div class="smallCol">
+								    <ul>
+								      <li>訂購材料和設備</li>
+								      <li>現場設置支架和水族箱</li>
+								      <li>組裝過濾系統</li>
+								    </ul>
+								  </div>
+								  <div class="smallCol">
+								    <ul>
+								      <li>運行系統</li>
+								      <li>放入棲息生物</li>
+								    </ul>
+								  </div>
+								</div>
+								<div id="installPic"></div>
+								</div>
+
+								
+								<h2>水族箱保養</h2>
+								<p class="nText">在安裝後，水族箱的護理不能停止。我們的保養服務旨在讓您的水族箱保持最佳狀態。我們根據您的日程安排和需求提供靈活的維護計劃，確保您的水族樂園是喜悅和恬靜的源泉，源源不絕。</p>
+
+								<div class="row">
+								<div class="banner" id="elongate">
+								  <h4 style="color: white;">每周或每兩周維護包括：</h4>
+								  <ul>
+								    <li>清潔設備、裝飾品和水族箱外部</li>
+								    <li>水 分析/測試</li>
+								    <li>換水</li>
+								    <li>補充劑、維生素和微量元素</li>
+								    <li>水箱和生物評估</li>
+								    <li>生物和設備推薦</li>
+								  </ul>
+								</div>
+								<div id="pictures" class="imgFormat"></div>
+								</div>
+								  
+
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Unit A, 5/F, Block A, Vita Tower, 29 Wong Chuk Hang Road<br />
+								Wong Chuk Hang, Hong Kong</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+852 2421-1112</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@exotic-aqua.com</a></p>
+							</section>
+						</section>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
