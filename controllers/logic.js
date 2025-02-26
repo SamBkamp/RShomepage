@@ -16,7 +16,12 @@ var tanks = async (req, res) => {
     res.render("tanks");
 }
 
+var about = async (req, res) => {
+    res.render("about");
+}
+
 exports.root = root;
 exports.customs = customs;
 exports.generic = generic;
 exports.tanks = tanks;
+exports.about = about;

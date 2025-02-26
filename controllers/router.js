@@ -6,5 +6,6 @@ router.get("/", logic.root);
 router.get("/customs", logic.customs);
 router.get("/generic", logic.generic);
 router.get("/tanks", logic.tanks);
+router.get("/about", logic.about);
 
 module.exports = router;
