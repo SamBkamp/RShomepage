@@ -1,43 +1,43 @@
 const cardPerRow = 3;
 
-function normaliseCardData(cardData){ //to turn card list into multiple of 3
+var cards = [
+    {"ctitle":"Acid Barrel Hammer",
+     "ctext":"HKD$21.20",
+     "btext":"Buy",
+     "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/hammer-300x300.jpg",
+     "blink":"https://store.reefstudio.com.hk/product/acid-barrel-hammer-1-head/"},
+    {"ctitle":"Sunkist Zoa",
+     "ctext":"HKD$100",
+     "btext":"Buy",
+     "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/zoa.jpg",
+     "blink":"https://store.reefstudio.com.hk/product/zoanthid-sunkist/"},
+    {"ctitle":"24k Torch",
+     "ctext":"HKD$100",
+     "btext":"Buy",
+     "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/24k-scaled.jpg",
+     "blink":"https://store.reefstudio.com.hk/product/24k-torch-coral-1-head/"},
+    {"ctitle":"Poison Mushroom",
+     "ctext":"HKD$100",
+     "btext":"Buy",
+     "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/green_shroom.png",
+     "blink":"https://store.reefstudio.com.hk/product/green-mushroom-frag/"}
+    
+];
+
+
+function normaliseCardData(cardData, cpr = cardPerRow){ //to turn card list into multiple of 3
     //(3-(5%3))%3;
-    if(cardData.length % cardPerRow != 0 || cardData.length == cardPerRow){
-	var toAdd = (cardPerRow-(cardData.length%cardPerRow));
+    if(cardData.length % cpr != 0 || cardData.length == cpr){
+	var toAdd = (cpr-(cardData.length%cpr));
 	for(var i = 0; i < toAdd; i++) cardData.push(cardData[i]);
     }
 
     return cardData;
 }
 
-
-
-$(document).ready(()=>{
-    var cardData = [
-	{"ctitle":"Acid Barrel Hammer",
-	 "ctext":"HKD$21.20",
-	 "btext":"Buy",
-	 "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/hammer-300x300.jpg",
-	 "blink":"https://store.reefstudio.com.hk/product/acid-barrel-hammer-1-head/"},
-	{"ctitle":"Sunkist Zoa",
-	 "ctext":"HKD$100",
-	 "btext":"Buy",
-	 "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/zoa.jpg",
-	 "blink":"https://store.reefstudio.com.hk/product/zoanthid-sunkist/"},
-	{"ctitle":"24k Torch",
-	 "ctext":"HKD$100",
-	 "btext":"Buy",
-	 "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/24k-scaled.jpg",
-	 "blink":"https://store.reefstudio.com.hk/product/24k-torch-coral-1-head/"},
-	{"ctitle":"Poison Mushroom",
-	 "ctext":"HKD$100",
-	 "btext":"Buy",
-	 "mlink":"https://store.reefstudio.com.hk/wp-content/uploads/2024/03/green_shroom.png",
-	 "blink":"https://store.reefstudio.com.hk/product/green-mushroom-frag/"}
-    
-    ];
-
-    cardData = normaliseCardData(cardData);
+function genCards(cpr = cardPerRow){
+    $(".carousel-inner").find('.citem').remove();
+    var cardData = normaliseCardData(cards, cpr);
 
     //INIT
     var curRow = $("<div class=\"row justify-content-center\" style=\"width: 85% !important; margin: auto;\"></div>")
@@ -46,7 +46,7 @@ $(document).ready(()=>{
 
     //main logic
     for(var i = 0; i < cardData.length; i++){
-	if(i % cardPerRow == 0 && i > 0){ //create new slide every 3 items	    
+	if(i % cpr == 0 && i > 0){ //create new slide every 3 items	    
 	    citem.prependTo(".carousel-inner");	    
 	    citem = $("<div class=\"carousel-item citem\"></div>");
 	    curRow = $("<div class=\"row justify-content-center\" style=\"width: 85% !important; margin: auto;\"></div>")
@@ -65,10 +65,19 @@ $(document).ready(()=>{
 	cbody.appendTo(card);
 	card.appendTo(column);
 	column.appendTo(curRow);
-		
+	
     }
     citem.prependTo(".carousel-inner");	    
-    
+}
+
+$(document).ready(()=>{
+    if(window.innerWidth >= 576) genCards();
+    else genCards(1);    
 });
+
+$(window).on('resize', ()=>{
+    if(window.innerWidth >= 576) genCards();
+    else genCards(1);
+})
 
 
