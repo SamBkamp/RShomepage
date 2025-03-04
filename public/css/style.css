@@ -5,8 +5,8 @@ body{
 }
 
 #mainBanner{
-    width: 80%;
     height: 26vw;
+    min-height: 19vh;
     background-image: url("/media/banner1.png");
     background-size: cover;
     background-position: top;
@@ -16,6 +16,7 @@ body{
 
 .subBanner{ /* for the secondary banner under the main banner*/
     height: 17vw;
+    min-height: 14vh;
     background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;
