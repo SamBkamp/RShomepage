@@ -15,8 +15,8 @@ body{
 
 
 .subBanner{ /* for the secondary banner under the main banner*/
-    height: 17vw;
-    min-height: 14vh;
+    height: 20vw;
+    min-height: 20vh;
     background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;

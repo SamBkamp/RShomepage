@@ -1,6 +1,11 @@
 const cardPerRow = 3;
 
 var cards = [
+    {"ctitle": "RS Peppermint Shrimp",
+     "ctext": "HKD$100.00",
+     "btext": "Buy",
+     "mlink": "/media/shrimp.JPG",
+     "blink": "#"},
     {"ctitle":"Acid Barrel Hammer",
      "ctext":"HKD$21.20",
      "btext":"Buy",
