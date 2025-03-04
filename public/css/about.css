@@ -5,12 +5,16 @@ body{
 }
 #teamBanner{
     height: 18vh;
+    --bs-bg-opacity: 1;
+    --bs-purple: #433066;
+    background-color: var(--bs-purple);
 }
 .pictureRow{
-    height: 35vh;
+    min-height: 35vh;
 }
 
 .headshot{
+    min-height: 200px;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat; 
