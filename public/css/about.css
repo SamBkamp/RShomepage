@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body{
+    font-family: "Lexend Deca", serif;
+}
+#teamBanner{
+    height: 18vh;
+}
+.pictureRow{
+    height: 35vh;
+}
+
+.headshot{
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; 
+}
+
+#pic1{
+    background-image: url("/media/Toshi.JPG");
+}
+
+#pic2{
+    background-image: url("/media/Sam.JPG");     
+}
