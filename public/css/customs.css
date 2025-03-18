@@ -1,0 +1,159 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+    
+}
+
+#mainNavBar{
+    position: static !important;
+}
+
+div > h1 {
+    font-family: "Source Sans 3", serif;
+}
+
+div > a {
+    font-family: "Lexen Deca", sans-serif;
+}
+
+#mainContainer{
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+}
+#topRow{
+    height: 70vh;
+}
+#footer{
+    z-index: 99999;
+}
+#customToggler{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.container-fluid.pageContainer{    
+    background-color: var(--bs-white);
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-bottom: 5vh;
+}
+
+@media (max-width: 576px){
+    .container-fluid.pageContainer{
+	width: 98%;
+    }
+
+    .container-fluid.navContainer{
+	width: 98%;
+    }
+    
+    section > .text-center.text-black{
+	font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 576px){
+    .container-fluid.pageContainer{
+	width: 80%;
+    }
+    
+    .container-fluid.navContainer{
+	width: 80%;
+    }
+    
+    section > .text-center.text-black{
+	font-size: 5rem;
+    }
+}
+
+
+body{
+    position: absolute;
+    top: 0px;
+    background-image: url("/images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/overlay.jpg");
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+nav > a {
+    background-color: var(--bs-white) !important;
+    width: 15%;
+    height: 7vh;
+    color: black !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 6vh;
+    border-right: 1px solid var(--bs-gray-200) !important;
+}
+
+nav > a:hover {
+    background-color: var(--bs-gray-100) !important;
+}
+
+
+.container-fluid.navContainer{
+    padding-left: 0px;
+}
+
+section{
+    width: 100%;
+    height: 90%;
+}
+
+div .spacing{
+    width: 100%;
+    height: 3%;
+}
+
+.pageimg {
+    width: 100%;
+    object-fit: cover; 
+}
+
+
+#img2{
+    
+    background-image: url("/images/plumbing.png");
+}
+
+#img3{
+    background-image: url("/images/install.png");
+}
+
+#img4 {
+    background-image: url("/images/scrub.jpg");    
+}
+
+#img5{
+    background-image: url("/images/freshwater.png");
+}
+
+#img6{
+    background-image: url("/images/fowlr.png");
+}
+
+#img7 {
+    background-image: url("/images/reef.png");
+}
+
+#img8{
+    background-image: url("/images/Jellyfish%20aquarium.jpg");
+}
+
+div .images {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-break {
+    color: var(--bs-gray-700);
+}
+
+ul > li {
+    margin-top: 2rem;
+}
